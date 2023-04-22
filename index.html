@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Calculator</title>
+
+    <style>
+
+      /* Add CSS styles for the calculator container, input fields, and buttons */
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="calculator">
+
+      <input type="number" id="num1">
+
+      <input type="number" id="num2">
+
+      <button id="add">+</button>
+
+      <button id="subtract">-</button>
+
+      <button id="multiply">*</button>
+
+      <button id="divide">/</button>
+
+      <input type="number" id="result" disabled>
+
+    </div>
+
+    <script>
+
+      const num1 = document.getElementById("num1");
+
+      const num2 = document.getElementById("num2");
+
+      const result = document.getElementById("result");
+
+      document.getElementById("add").addEventListener("click", function() {
+
+        result.value = parseInt(num1.value) + parseInt(num2.value);
+
+      });
+
+      document.getElementById("subtract").addEventListener("click", function() {
+
+        result.value = parseInt(num1.value) - parseInt(num2.value);
+
+      });
+
+      document.getElementById("multiply").addEventListener("click", function() {
+
+        result.value = parseInt(num1.value) * parseInt(num2.value);
+
+      });
+
+      document.getElementById("divide").addEventListener("click", function() {
+
+        result.value = parseInt(num1.value) / parseInt(num2.value);
+
+      });
+
+    </script>
+
+  </body>
+
+</html>
+
